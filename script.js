@@ -188,7 +188,7 @@ idiomaButton.addEventListener('click', animacionmostrarIdioma, true)
 let seleccionarIdiomaIngles = document.getElementsByClassName('seleccionarIdiomaIngles')[0];
 
 function viajarAidiomaIngles(){
-    if(window.location.href.includes('index.html')){
+    if(!window.location.href.includes('indexIngles.html')){
         window.location.href = "indexIngles.html";
     }else if(window.location.href.includes('indexIngles.html')){
         window.location.href = "index.html";

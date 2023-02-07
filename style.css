@@ -1,0 +1,1405 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jost';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #242424;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.loadPage {
+    background: #242424;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 5000;
+}
+
+.loadPageObjeto1 {
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: -10px;
+    margin-top: 180px;
+    transition: all 1s;
+}
+
+.loadPageObjeto2{
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    transition: all 1s;
+}
+
+.loadPageObjeto1 img {
+    height: 100px;
+    width: 200px;
+}
+
+.loadPageObjeto2 img {
+    height: 80px;
+    width: 200px;
+}
+
+
+.moverimg1IzqDer {
+    animation: moverimg1IzqDer 1s;
+}
+
+.moverimg2DerIzq {
+    animation: moverimg2DerIzq 1s;
+}
+
+.rotacionload {
+    animation: rotacionload 3s;
+}
+@keyframes rotacionload{
+    0% {
+        transform: rotate(0);
+    }
+    34% {
+        transform: rotate(0);
+    }
+    68% {
+        transform: rotate(360deg);
+    }
+    70%{
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes moverimg1IzqDer{
+    0% {
+        transform: translateX(-2000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverimg2DerIzq{
+    0% {
+        transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.ocultarEmail {
+    display: none;
+}
+
+.ocultarRedes {
+    display: none;
+}
+
+.containerFondo1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    background: #242424;
+}
+
+.containerFondo1__Principal {
+    height: 70%;
+    width: 50%;
+    margin: 143px auto;
+    text-align: center;
+}
+
+.containerFondo1__Principal img {
+    height: 150px;
+    width: 200px;
+}
+
+.containerFondo1__Principal h1 {
+    color: #fff;
+    font-size: 70px;
+    line-height: 90px;
+    font-weight: 600;
+}
+
+.containerFondo1__Principal h1 span {
+    color: #EE4540;
+}
+
+.containerFondo1__Principal p {
+    margin-top: 30px;
+    color: rgb(183, 170, 170);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.containerFondo1__Principal p span {
+    color: #EE4540;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    background: #242424ec;
+    box-shadow: 0 0 10px 0 #000;
+}
+
+nav ul img {
+    height: 50px;
+    width: 65px;
+    margin-top: 25px;
+    margin-left: 70px;
+}
+
+nav ul li {
+    display: inline;
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+nav ul {
+    margin-right: 150px;
+}
+
+nav ul li a {
+    color: rgb(183, 170, 170);
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'roboto mono';
+}
+
+nav ul li button {
+    color: #EE4540;
+    padding: 10px 20px;
+    border: 1px solid #ee4540;
+    border-radius: 5px;
+    background: none;
+    font-family: 'roboto mono';
+    font-size: 15px;
+    margin-top: -9px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav ul li button:hover {
+    background: #ee464032;
+    transition: .3s;
+}
+
+nav ul li button:not(.hover) {
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: #EE4540;
+    transition: .3s;
+}
+
+nav ul li a:not(.hover) {
+    transition: .3s;
+}
+
+nav ul li a span {
+    color: #EE4540;
+    font-family: 'roboto mono';
+}
+
+.containerFondo1__Principal p i {
+    color: rgb(183, 170, 170);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.containerFondo1__Principal p i:hover {
+    color: #EE4540;
+    font-size: 30px;
+    margin-top: 15px;
+    transition: .3s;
+}
+
+.containerFondo1__Principal p i:not(.hover) {
+    transition: .3s;
+}
+
+.fa-circle-mover {
+    margin-top: 50px;
+}
+
+.redesSociales {
+    width: 50px;
+    height: 270px;
+    position: fixed;
+    bottom: 0;
+    left: 35px;
+}
+
+.redesSociales__borde {
+    height: 90px;
+    width: 50%;
+    border-right: 1px solid rgb(183, 170, 170);
+    position: absolute;
+    bottom: 0;
+}
+
+.redesSociales_iconos {
+    height: 300px;
+    width: 50px;
+    position: absolute;
+    bottom: -10px;
+}
+
+.redesSociales_iconos a i {
+    font-size: 20px;
+    color: rgb(183, 170, 170);
+    cursor: pointer;
+}
+
+.redesSociales_iconos a {
+    text-decoration: none;
+}
+
+.linkedin {
+    position: absolute;
+    right: 15px;
+    top: -10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.facebook {
+    position: absolute;
+    right: 15px;
+    top: 80px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.twitter {
+    position: absolute;
+    right: 15px;
+    top: 125px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.instagram {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.instagram:hover {
+    color: #EE4540;
+    top: 31px;
+    transition: .3s;
+}
+
+.instagram:not(.hover){
+    transition: .3s;
+}
+
+.facebook:hover {
+    color: #EE4540;
+    top: 76px;
+    transition: .3s;
+}
+
+.facebook:not(.hover){
+    transition: .3s;
+}
+
+.twitter:hover {
+    color: #EE4540;
+    top: 121px;
+    transition: .3s;
+}
+
+.twitter:not(.hover){
+    transition: .3s;
+}
+
+.linkedin:hover {
+    color: #EE4540;
+    top: -14px;
+    transition: .3s;
+}
+
+.linkedin:not(.hover){
+    transition: .3s;
+}
+
+.email {
+    width: 50px;
+    height: 240px;
+    position: fixed;
+    bottom: 0;
+    right: 35px;
+}
+
+
+.email__borde {
+    height: 90px;
+    width: 50%;
+    border-right: 1px solid rgb(183, 170, 170);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.email__email {
+    height: 300px;
+    width: 50px;
+    position: absolute;
+    transform: rotate(180deg);
+    bottom: 90px;
+}
+
+.email__email a {
+    transform: rotate(90deg);
+    bottom: 135px;
+    left: -85px;
+    position: absolute;
+    color: rgb(183, 170, 170);
+    font-family: 'roboto mono';
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.email__email a:hover {
+    color: #EE4540;
+    bottom: 125px;
+    transition: .3s;
+}
+
+.email__email a:not(.hover){
+    transition: .3s;
+}
+
+.idiomaButton {
+    height: 42px;
+    width: 42px;
+    border: 1px solid #EE4540;
+    border-radius: 5px;
+    list-style: none;
+    float: right;
+    margin-top: 31px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.idiomaButton img {
+    height: 25px;
+    width: 25px;
+    margin-left: 7px;
+    margin-top: 7px;
+}
+
+.idiomaButton:hover {
+    background: #ee464032;
+    transition: .3s;
+}
+
+.idiomaButton:not(.hover){
+    transition: .3s;
+}
+
+.containerFondo2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    background: #242424;
+    margin-top: 50%;
+}
+
+.containerFondo2__Principal {
+    height: 70%;
+    width: 50%;
+    margin: 150px auto;
+}
+
+.containerFondo2__AcercadeMiTitulo {
+    width: 100%;
+    height: 50px;
+}
+
+.containerFondo2__AcercadeMiTitulo h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.containerFondo2__AcercadeMiTitulo h2 span {
+    font-size: 20px;
+    color: #EE4540;
+    font-family: 'roboto mono';
+}
+
+.containerFondo2__AcercadeMiTitulo h2::after {
+    content: "";
+    display: flex;
+    position: relative;
+    top: -20px;
+    left: 180px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background: rgba(255, 255, 255, 0.242);
+}
+
+.containerFondo2__Principal__texto1 {
+    width: 540px;
+    display: flex;
+}
+
+.containerFondo2__Principal p {
+    color: rgb(183, 170, 170);
+    font-size: 20px;
+}
+
+.containerFondo2__Principal__texto1 a {
+    color: #EE4540;
+    text-decoration: none;
+}
+
+.containerFondo2__Principal__texto1 ul {
+    display: block;
+}
+
+.containerFondo2__Principal__texto1 a:hover {
+    text-decoration: underline;
+}
+
+.containerFondo2__Principal__img {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    float: right;
+    margin-top: -140px;
+    margin-right: 80px;
+    border-radius: 5px;
+    background: #EE4540;
+}
+
+.navResponsive {
+    display: none;
+}
+
+.containerFondo2__Principal__img img {
+    opacity: 40%;
+}
+
+.containerFondo2__Principal__img2 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    border: 2px solid #EE4540;
+    background: rgb(25, 25, 25);
+    border-radius: 5px;
+    z-index: -1000;
+}
+
+.containerFondo2__Principal__img img:hover {
+    opacity: 100%;
+    transition: .3s;
+}
+
+.containerFondo2__Principal__img img:not(.hover) {
+    transition: .3s;
+}
+
+.containerFondo2__Principal__img img:hover ~ .containerFondo2__Principal__img2{
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    margin-top: 30px;
+    margin-left: 30px;
+    transition: .3s;
+}
+
+.containerFondo2__Principal__img img:not(.hover) ~ .containerFondo2__Principal__img2{
+    transition: .3s;
+}
+
+.lenguajesLista {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+}
+
+.lenguajesLista li {
+    list-style: none;
+    color: rgb(183, 170, 170);
+    line-height: 5px;
+}
+
+.lenguajesLista li::before {
+    content: "↪";
+    color: #EE4540;
+}
+
+.containerFondo3 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    background: #242424;
+    margin-top: 0%;
+}
+
+.containerFondo3__Principal {
+    height: 65%;
+    width: 50%;
+    margin: 150px auto;
+}
+
+.containerFondo3__Principal__texto {
+    height: 60px;
+    width: 80%;
+}
+
+.containerFondo3__Principal__texto p {
+    font-size: 20px;
+    color: rgb(183, 170, 170);
+}
+
+.containerFondo3__Principal__texto a {
+    text-decoration: none;
+    color: #ee4540;
+}
+
+.containerFondo3__Principal__texto i {
+    float: right;
+    font-size: 30px;
+    margin-right: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.containerFondo3__Principal__Proyectos {
+    height: 500px;
+    width: 100%;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua {
+    height: 90%;
+    width: 100%;
+    border-bottom: 1px solid #EE4540;
+    padding-top: 20px;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua span {
+    color: #EE4540;
+    font-weight: 700;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua h3 {
+    color: rgb(183, 170, 170);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua__grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    padding: 40px;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua__grid p {
+    color: rgb(183, 170, 170);
+    font-size: 20px;
+    margin-top: -40px;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua__grid img {
+    height: 300px;
+    width: 400px;
+    opacity: 40%;
+    border-radius: 5px;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen {
+    display: flex;
+    height: 300px;
+    width: 400px;
+    float: right;
+    border-radius: 5px;
+    background: #EE4540;
+    margin-top: -30px;
+    margin-right: 30px;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua__grid img:hover {
+    opacity: 100%;
+    transition: .3s;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua__grid img:not(.hover) {
+    transition: .3s;
+}
+
+.containerFondo3__Principal__Proyectos__empresaDeAgua__grid p span {
+    font-weight: 500;
+}
+
+.cantidadDeProyectos {
+    text-align: center;
+    margin-top: 10px;
+    color: #EE4540;
+}
+
+.containerFondo4 {
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    background: #242424;
+    margin-top: 50%;
+}
+
+.containerFondo4__Principal {
+    height: 30%;
+    width: 50%;
+    margin: 150px auto;
+    text-align: center;
+}
+
+.containerFondo4__AcercadeMiTitulo {
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid r;
+}
+
+.containerFondo4__AcercadeMiTitulo h3 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.containerFondo4__AcercadeMiTitulo h3 span {
+    font-size: 20px;
+    color: #EE4540;
+    font-family: 'roboto mono';
+}
+
+.containerFondo4__Principal h4 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    font-family: 'roboto mono';
+}
+
+.containerFondo4__Principal p {
+    font-size: 20px;
+    color: rgb(183, 170, 170);
+}
+
+.containerFondo4__Principal button {
+    color: #EE4540;
+    padding: 20px 30px;
+    border: 1px solid #ee4540;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+
+.containerFondo4__Principal button a {
+    font-family: 'roboto mono';
+    font-size: 15px;
+    text-decoration: none;
+    color: #EE4540;
+}
+
+.containerFondo4__Principal button:hover {
+    background: #ee464032;
+    transition: .3s;
+}
+
+.containerFondo4__Principal button:not(.hover){
+    transition: .3s;
+}
+
+.idiomaButtonSelector {
+    height: 52px;
+    width: 50px;
+    border: 1px solid #ee4540;
+    border-radius: 5px;
+    margin-left: -5px;
+    margin-top: 2px;
+    animation: all .3s;
+    display: none;
+    opacity: 0;
+}
+
+.idiomaButtonSelector li {
+    margin-top: 20px;
+}
+
+.idiomaButtonSelector li img {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    margin-top: -20px;
+    padding: 10px;
+    margin-right: -20px;
+}
+
+.idiomaButtonSelector li img:hover {
+    background: #ee464032;
+}
+
+.idiomaButtonSelectAnimacion {
+    animation: idiomaButtonSelectAnimacion .3s;
+}
+
+.fotoResponsiveSobreMi {
+    display: none;
+}
+
+@keyframes idiomaButtonSelectAnimacion {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animado {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animado2 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animado3 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.animado4 {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.mostrarArriba {
+    animation: mostrarArriba 1s;
+}
+
+.redesSocialesResponsive {
+    display: none;
+}
+
+@keyframes mostrarArriba{
+    0% {
+        transform: translateY(60px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 1680px) {
+    .containerFondo2__Principal__img {
+        height: 210px;
+        width: 210px;
+    }
+    .containerFondo2__Principal__img2 {
+        height: 210px;
+        width: 210px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen {
+        height: 200px;
+        width: 300px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen img {
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .containerFondo2__Principal__img {
+        height: 250px;
+        width: 250px;
+        margin-right: 80px;
+    }
+    .containerFondo2__Principal__img2 {
+        height: 250px;
+        width: 250px;
+        margin-right: 80px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen {
+        height: 190px;
+        width: 290px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen img {
+        height: 190px;
+        width: 290px;
+    }
+    .containerFondo2__Principal {
+        width: 60%;
+    }
+    .containerFondo3__Principal {
+        width: 60%;
+    }
+    .containerFondo1__Principal h1 {
+        font-size: 60px;
+    }
+    .containerFondo1__Principal p{
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .containerFondo2 {
+        margin-top: 60%;
+    }
+    .containerFondo3 {
+        margin-top: 120%;
+    }
+    .containerFondo4 {
+        margin-top: 190%;
+    }
+    .containerFondo2__Principal__img {
+        height: 250px;
+        width: 250px;
+        margin-right: 60px;
+    }
+    .containerFondo2__Principal__img2 {
+        height: 250px;
+        width: 250px;
+        margin-right: 60px;
+    }
+    .containerFondo2__Principal {
+        width: 60%;
+    }
+    .containerFondo3__Principal {
+        width: 60%;
+    }
+    .containerFondo1__Principal h1 {
+        line-height: 75px;
+        margin-bottom: 10px;
+    }
+    .containerFondo1__Principal p {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .containerFondo2 {
+        margin-top: 70%;
+    }
+    .containerFondo3 {
+        margin-top: 120%;
+    }
+    .containerFondo4 {
+        margin-top: 190%;
+    }
+    .containerFondo1__Principal img {
+        height: 130px;
+        width: 180px;
+    }
+    .containerFondo1__Principal p {
+        margin-bottom: 30px;
+    }
+    .containerFondo2 {
+        margin-top: 60%;
+    }
+    .containerFondo3 {
+        margin-top: 130%;
+    }
+    .containerFondo4 {
+        margin-top: 190%;
+    }
+    .containerFondo2__Principal__img {
+        height: 230px;
+        width: 230px;
+        margin-right: 60px;
+    }
+    .containerFondo2__Principal__img2 {
+        height: 230px;
+        width: 230px;
+        margin-right: 60px;
+    }
+    .containerFondo2__Principal {
+        width: 65%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .containerFondo1__Principal h1 {
+        line-height: 70px;
+        font-size: 65px;
+    }
+    .containerFondo1__Principal {
+        width: 60%;
+    }
+    .containerFondo2__Principal__texto1 p {
+        font-size: 18px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid p {
+        font-size: 18px;
+    }
+    .containerFondo4 {
+        margin-top: 185%;
+    }
+    .containerFondo2 {
+        margin-top: 60%;
+    }
+    .containerFondo3 {
+        margin-top: 120%;
+    }
+    .desaparecerMasAdelante {
+        display: none;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua {
+        padding-top: 10px;
+    }
+    .containerFondo2__Principal__img {
+        height: 230px;
+        width: 230px;
+        margin-right: 40px;
+    }
+    .containerFondo2__Principal__img2 {
+        height: 230px;
+        width: 230px;
+        margin-right: 40px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .containerFondo2 {
+        margin-top: 85%;
+    }
+    .containerFondo1__Principal {
+        width: 65%;
+    }
+    nav ul {
+        margin-right: 50px;
+    }
+    .containerFondo3 {
+        margin-top: 180%;
+    }
+    .containerFondo4 {
+        margin-top: 270%;
+    }
+    .containerFondo3__Principal{
+        width: 70%;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen {
+        margin-right: 0;
+    }
+    .containerFondo2__Principal__img {
+        height: 200px;
+        width: 200px;
+        margin-right: 20px;
+    }
+    .containerFondo2__Principal__img2 {
+        height: 200px;
+        width: 200px;
+        margin-right: 20px;
+    }
+    .containerFondo2__Principal__texto1 p {
+        width: 400px;
+    }
+    .posibleDesaparecer1000 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .containerFondo2__Principal {
+        width: 75%;
+    }
+    .containerFondo3__Principal {
+        width: 75%;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen {
+        height: 150px;
+        width: 250px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen img{
+        height: 150px;
+        width: 250px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua h3 {
+        font-size: 20px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid {
+        gap: 20px;
+    }
+    .containerFondo2 {
+        margin-top: 100%;
+    }
+    .containerFondo4__Principal {
+        width: 65%;
+    }
+    .containerFondo1__Principal {
+        width: 75%;
+    }
+    .containerFondo3 {
+        margin-top: 200%;
+    }
+    .containerFondo4 {
+        margin-top: 300%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    nav .navNormal{
+        display: none;
+    }
+    .containerFondo3 {
+        margin-top: 0%;
+    }
+    .containerFondo4 {
+        margin-top: 100%;
+    }
+    nav .navResponsive {
+        display: inline;
+    }
+    .navResponsive a{
+        text-decoration: none;
+    }
+    .navResponsive i {
+        font-size: 50px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 50px;
+        color: #EE4540;
+        cursor: pointer;
+    }
+    .navResponsive i:hover {
+        color: #9a2d2a;
+        transition: .3s;
+    }
+    .navResponsive i:not(.hover) {
+        transition: .3s;
+    }
+    .navResponsive_Bloque {
+        height: 640px;
+        width: 100%;
+        position: fixed;
+        z-index: 6000;
+        background: #242424;
+        display: none;
+    }
+    .navResponsive_Bloque ul li {
+        display: flex;
+        justify-content: center;
+        float: none;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .navResponsive_Bloque ul li a {
+        font-size: 25px;
+    }
+    .navResponsive ul li button {
+        font-size: 25px;
+    }
+    .email {
+        display: none;
+    }
+    .redesSociales {
+        display: none;
+    }
+    .bloquearExteriorResponsive {
+        height: 50%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.372);
+        position: fixed;
+        z-index: 5000;
+        filter: blur(10px);
+        bottom: 0;
+        display: none;
+    }
+    nav {
+        background: #242424;
+    }
+    .botonidiomaResponsive {
+        height: 70px;
+        width: 70px;
+    }
+    .botonidiomaResponsive img {
+        margin: 0;
+        height: 50px;
+        width: 50px;
+        margin-left: -12px;
+        border: 1px solid #000;
+        border-radius: 50px;
+    }
+    .botonidiomaResponsiveOtro {
+        border: 1px solid #ee4540;
+        border-radius: 5px;
+        height: 70px;
+        width: 70px;
+        display: none;
+    }
+    .botonidiomaResponsiveOtro {
+        margin-top: -50px;
+    }
+    .botonidiomaResponsiveOtro img {
+        height: 50px;
+        width: 50px;
+        border: 1px solid #000;
+        border-radius: 50px;
+        margin-left: -12px;
+        margin-top: -2px;
+    }
+    .redesSocialesResponsive {
+        width: 70%;
+        height: 30px;
+        display: block;
+        margin: auto;
+    }
+    .redesSocialesResponsive i {
+        display: inline-block;
+        position: absolute;
+        text-decoration: none;
+        font-size: 30px;
+        color: rgb(183, 170, 170);
+    }
+    .facebook2 {
+        margin-left: -40px;
+    }
+    .facebook2:hover {
+        transform: translateY(-10px);
+        color: #EE4540;
+        transition: .3s;
+    }
+    .facebook2:not(.hover){
+        transition: .3s;
+    }
+    .twitter2 {
+        margin-left: 10px;
+    }
+    .twitter2:hover {
+        transform: translateY(-10px);
+        color: #EE4540;
+        transition: .3s;
+    }
+    .twitter2:not(.hover){
+        transition: .3s;
+    }
+    .instagram2 {
+        margin-left: 60px;
+    }
+    .instagram2:hover {
+        transform: translateY(-10px);
+        color: #EE4540;
+        transition: .3s;
+    }
+    .instagram2:not(.hover){
+        transition: .3s;
+    }
+    .linkedin2 {
+        margin-left: -90px;
+    }
+    .linkedin2:hover {
+        transform: translateY(-10px);
+        color: #EE4540;
+        transition: .3s;
+    }
+    .linkedin2:not(.hover){
+        transition: .3s;
+    }
+}
+
+
+@media only screen and (max-width: 616px) {
+    .containerFondo4 {
+        margin-top: 200%;
+    }
+    .containerFondo2 {
+        margin-top: 160%;
+    }
+    .containerFondo3 {
+        margin-top: 50%;
+    }
+    .containerFondo2__Principal__img {
+        display: none;
+    }
+    .fotoResponsiveSobreMi{
+        width: 90%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .fotoResponsiveSobreMiBack{
+        background: #EE4540;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+    }
+    .fotoResponsiveSobreMi img{
+        width: 200px;
+        height: 200px;
+        opacity: 40%;
+    }
+    .h2InvisibleResp {
+        display: none;
+    }
+    .fotoResponsiveSobreMiDecorado {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 30px;
+        border-radius: 5px;
+        border: 2px solid #EE4540;
+        background: rgb(25, 25, 25);
+        border-radius: 5px;
+        z-index: -1000;
+    }
+    .containerFondo1__Principal h1 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .containerFondo3__Principal {
+        width: 90%;
+    }
+    .containerFondo3__Principal__texto i {
+        float: right;
+        font-size: 30px;
+        padding: 5px 5px;
+        cursor: pointer;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        margin-right: 100px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid {
+        display: block;
+    }
+    .cantidadDeProyectos {
+        margin-top: 50px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua {
+        border-bottom: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .containerFondo2 {
+        margin-top: 150%;
+    }
+    .containerFondo1__Principal {
+        width: 85%;
+    }
+    .containerFondo1__Principal h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .containerFondo1__Principal p {
+        margin-bottom: 70px;
+    }
+    .containerFondo2 {
+        margin-top: 180%;
+    }
+    .containerFondo3 {
+        margin-top: 60%;
+    }
+    .containerFondo4 {
+        margin-top: 280%;
+    }
+    .containerFondo2__Principal {
+        width: 90%;
+    }
+    .containerFondo2__AcercadeMiTitulo h2::after {
+        width: 200px;
+    }
+    .containerFondo2__Principal__img {
+        display: none;
+    }
+    .fotoResponsiveSobreMi{
+        width: 90%;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    .fotoResponsiveSobreMiBack{
+        background: #EE4540;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+    }
+    .fotoResponsiveSobreMi img{
+        width: 200px;
+        height: 200px;
+        opacity: 40%;
+    }
+    .h2InvisibleResp {
+        display: none;
+    }
+    .fotoResponsiveSobreMiDecorado {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 30px;
+        border-radius: 5px;
+        border: 2px solid #EE4540;
+        background: rgb(25, 25, 25);
+        border-radius: 5px;
+        z-index: -1000;
+    }
+    .containerFondo3__Principal {
+        width: 90%;
+    }
+    .containerFondo3__Principal__texto i {
+        float: right;
+        font-size: 30px;
+        padding: 5px 5px;
+        cursor: pointer;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid__imagen {
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        margin-right: 20px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua__grid {
+        display: block;
+    }
+    .cantidadDeProyectos {
+        margin-top: 150px;
+    }
+    .containerFondo3__Principal__Proyectos__empresaDeAgua {
+        border-bottom: none;
+    }
+    .containerFondo4__Principal {
+        width: 90%;
+    }
+}
